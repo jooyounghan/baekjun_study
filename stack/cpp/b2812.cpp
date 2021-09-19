@@ -14,7 +14,7 @@ int main() {
 	result.push_back(numbers[0]);
 	numbers.erase(numbers.begin());
 	for (auto& number : numbers) {
-		while (K and result.size() and number > result[result.size() - 1]) {
+		while (K && result.size() && number > result[result.size() - 1]) {
 			result.pop_back();
 			K--;
 		}
